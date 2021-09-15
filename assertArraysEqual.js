@@ -13,18 +13,15 @@ const eqArrays = function(arr1, arr2) {
   } return true;
 };
 
-const assertArraysEqual = function(data1, data2) {
-  let isEqual = eqArrays(data1, data2);
-    
-  let expected = true;
-  if (isEqual === expected) {
-    return (`✅ Assertion Passed: ${isEqual} === ${expected}`);
+const assertArraysEqual = function(eqArrays, expected) {
+  if (eqArrays === expected) {
+    return (`✅ Assertion Passed: ${eqArrays} === ${expected}`);
   } else {
-    return (`❌ Assertion Failed: ${isEqual} !== ${expected}`);
+    return (`❌ Assertion Failed: ${eqArrays} !== ${expected}`);
   }
 };
 
-console.log(assertArraysEqual([1,2,3], [1,2,3]));
-console.log(assertArraysEqual([1,2,3], [2,2,1]));
-console.log(assertArraysEqual(["1", "2" ,"3"], ["1","2","3"]));
-console.log(assertArraysEqual(["1", "2" ,"3"], ["1","2",3]));
+console.log(assertArraysEqual(eqArrays([1,2,3], [1,2,3]), true))
+console.log(assertArraysEqual(eqArrays([1,2,3], [2,2,1]), true))
+console.log(assertArraysEqual(eqArrays(["1", "2" ,"3"], ["1","2","3"]), true))
+console.log(assertArraysEqual(eqArrays(["1", "2" ,"3"], ["1","2",3]), true))
