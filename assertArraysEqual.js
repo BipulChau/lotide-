@@ -15,13 +15,13 @@ const eqArrays = function(arr1, arr2) {
 
 const assertArraysEqual = function(eqArrays, expected) {
   if (eqArrays === expected) {
-    return (`✅ Assertion Passed: ${eqArrays} === ${expected}`);
+    console.log (`✅ Assertion Passed: ${eqArrays} === ${expected}`);
   } else {
-    return (`❌ Assertion Failed: ${eqArrays} !== ${expected}`);
+    console.log (`❌ Assertion Failed: ${eqArrays} !== ${expected}`);
   }
 };
 
-console.log(assertArraysEqual(eqArrays([1,2,3], [1,2,3]), true))
-console.log(assertArraysEqual(eqArrays([1,2,3], [2,2,1]), true))
-console.log(assertArraysEqual(eqArrays(["1", "2" ,"3"], ["1","2","3"]), true))
-console.log(assertArraysEqual(eqArrays(["1", "2" ,"3"], ["1","2",3]), true))
+assertArraysEqual(eqArrays([1,2,3], [1,2,3]), true)
+assertArraysEqual(eqArrays([1,2,3], [2,2,1]), true)
+assertArraysEqual(eqArrays(["1", "2" ,"3"], ["1","2","3"]), true)
+assertArraysEqual(eqArrays(["1", "2" ,"3"], ["1","2",3]), true)
