@@ -1,11 +1,8 @@
+const assert = require('chai').assert;
 const tail = require('../tail');
-const assertEqual = require('../assertEqual');
 
-
-let names = ["Bipul", "Madhu", "Nanu", "Bunu", "Oguwa"];
-let newName = tail(names);
-
-// console.log(names);
-//console.log(newName);
-
-assertEqual(tail(names).length, newName.length);
+describe("tail", ()=> {
+  it("should return 4 for ['Bipul', 'Madhu', 'Nanu', 'Bunu', 'Oguwa']", () => {
+    assert.strictEqual(tail(['Bipul', 'Madhu', 'Nanu', 'Bunu', 'Oguwa']).length, ['Madhu', 'Nanu', 'Bunu', 'Oguwa'].length)
+  })
+})
