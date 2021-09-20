@@ -22,10 +22,12 @@ const countLetters = function(sentence) {
   return numLetter;
 };
 
-let letterCounts = countLetters("lighthouse in the house");
-console.log(letterCounts);
+// let letterCounts = countLetters("lighthouse in the house");
+// console.log(letterCounts);
 
-assertEqual(letterCounts["l"], 1);
-assertEqual(letterCounts["h"], 4);
-assertEqual(letterCounts["i"], 5);
-assertEqual(letterCounts["z"], undefined);
+// assertEqual(letterCounts["l"], 1);
+// assertEqual(letterCounts["h"], 4);
+// assertEqual(letterCounts["i"], 5);
+// assertEqual(letterCounts["z"], undefined);
+
+module.exports = countLetters;

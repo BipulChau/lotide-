@@ -34,19 +34,21 @@ const map = function(array, callback){
   }
   return results;
 }
-const result1 = map(words, word => word[1]);
+// const result1 = map(words, word => word[1]);
 
-console.log (result1)
+// console.log (result1)
 
-let sal = [1, 2, 3]
-let newSal = map(sal, paisa  => paisa+=1)
-console.log(newSal)
-assertArraysEqual(newSal, [2,3,4])
+// let sal = [1, 2, 3]
+// let newSal = map(sal, paisa  => paisa+=1)
+// console.log(newSal)
+// assertArraysEqual(newSal, [2,3,4])
 
-let animals = [{type: "Dog", namee: "Oguwa"},
-{type: "Cat", namee: "Chew"}
-]
+// let animals = [{type: "Dog", namee: "Oguwa"},
+// {type: "Cat", namee: "Chew"}
+// ]
 
-let newAnimal = map(animals, a => a.namee)
-console.log(newAnimal)
-assertArraysEqual(['Oguwa', 'Chew'], ['Oguwa', 'Chew'])
+// let newAnimal = map(animals, a => a.namee)
+// console.log(newAnimal)
+// assertArraysEqual(['Oguwa', 'Chew'], ['Oguwa', 'Chew'])
+
+module.exports = map;

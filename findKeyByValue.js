@@ -19,8 +19,10 @@ let bestTVShowsByGenre = {
   comedy: "Brooklyn Nine-Nine",
   drama: "The Wire"
 };
-let result = findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine");
-console.log(result);
-assertEqual(result, "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "Mahabharat"), undefined);
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+// let result = findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine");
+// console.log(result);
+// assertEqual(result, "drama");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "Mahabharat"), undefined);
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+
+module.exports =  findKeyByValue;

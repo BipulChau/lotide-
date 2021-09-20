@@ -57,24 +57,26 @@ const eqObjects = function(object1, object2) {
 // }
 
 
-let ab = {a: "1", b: "2"};
-let ba = {b: "2", a: "1" };
-let abc = {a :"1", b: "2", c:"3"};
-let def = {a :"1", b: "2", c:"3"};
-assertEqual(eqObjects(ab,ba), true);
-assertEqual(eqObjects(ab, abc), true);
-assertEqual(eqObjects(abc, def), true);
+// let ab = {a: "1", b: "2"};
+// let ba = {b: "2", a: "1" };
+// let abc = {a :"1", b: "2", c:"3"};
+// let def = {a :"1", b: "2", c:"3"};
+// assertEqual(eqObjects(ab,ba), true);
+// assertEqual(eqObjects(ab, abc), true);
+// assertEqual(eqObjects(abc, def), true);
 
-let cd = {c: "1", d:["2", 3]};
-let dc = {d: ["2", 3], c: "1"};
-assertEqual(eqObjects(cd, dc), true);
+// let cd = {c: "1", d:["2", 3]};
+// let dc = {d: ["2", 3], c: "1"};
+// assertEqual(eqObjects(cd, dc), true);
 
-let ef = {c: "1", d:["2", 3]};
-let gh = {d: ["2", 3], c: "2"};
-assertEqual(eqObjects(ef, gh), true);
+// let ef = {c: "1", d:["2", 3]};
+// let gh = {d: ["2", 3], c: "2"};
+// assertEqual(eqObjects(ef, gh), true);
 
-let cd2 = {c: "1", d: ["2", 3 ,4]};
-assertEqual(eqObjects(cd, cd2), true);
+// let cd2 = {c: "1", d: ["2", 3 ,4]};
+// assertEqual(eqObjects(cd, cd2), true);
 // //console.log(eqArrays(cd["d"], cd2["d"]));
 
 // console.log(eqObjects(cd, dc))
+
+module.exports = eqObjects;
