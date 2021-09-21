@@ -1,8 +1,8 @@
 {
   "name": "lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "lotide package",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/BipulChau/lotide-.git"
   },
-  "author": "",
+  "author": "Bipul Chaudhary",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/BipulChau/lotide-/issues"

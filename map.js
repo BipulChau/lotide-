@@ -34,9 +34,9 @@ const map = function(array, callback){
   }
   return results;
 }
-// const result1 = map(words, word => word[1]);
+const result1 = map(words, word => word[1]);
 
-// console.log (result1)
+console.log (result1)
 
 // let sal = [1, 2, 3]
 // let newSal = map(sal, paisa  => paisa+=1)
@@ -51,4 +51,4 @@ const map = function(array, callback){
 // console.log(newAnimal)
 // assertArraysEqual(['Oguwa', 'Chew'], ['Oguwa', 'Chew'])
 
-module.exports = map;
+// module.exports = map;
